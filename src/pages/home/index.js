@@ -31,28 +31,28 @@ const Home = () => {
             <div className='movie-section'>
                 <h1>Trending Movies</h1>
 
-                <a href="">View all</a>
+                <Link to='/movies'>View all</Link>
             </div>
             <TrendingMovies />
 
             <div className='movie-section'>
                 <h1>Top rated Movies</h1>
 
-                <a href="">View all</a>
+                <Link to='/movies'>View all</Link>
             </div>
             <TopRatedMovies />
 
             <div className='movie-section'>
                 <h1>Trending Series</h1>
 
-                <a href="">View all</a>
+                <Link to='/series'>View all</Link>
             </div>
            <TrendingSeries /> 
 
             <div className='movie-section'>
                 <h1>Top rated Series</h1>
 
-                <a href="">View all</a>
+                <Link to='/series'>View all</Link>
             </div>
             <TopRatedSeries />
 
