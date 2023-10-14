@@ -1,0 +1,36 @@
+/* Animation */
+
+.zoom-out {
+    animation: zoom-out 1s ease forwards;
+}
+
+.vall-down {
+    animation: vall-down 2s ease forwards;
+}
+
+@keyframes zoom-out {
+    0% {
+        opaity: 0;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes vall-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animation */

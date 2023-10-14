@@ -1,0 +1,249 @@
+/* Media Query */
+
+@media (min-width: 576px) {
+    .banner {
+        height: 100vh;
+        min-height: 600px;
+        cursor: grab;
+    }
+
+    .text-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .text-content p {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .menu {
+        display: flex;
+        width: 480px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .single-banner {
+        min-height: 600px;
+        height: 100vh;
+    }
+
+    .card-container-movie {
+        grid-template-columns: repeat(3, 160px);
+    }
+
+    .trailer iframe {
+        height: 350px;
+    }
+
+    .single-banner .single-content .genre {
+        width: 350px;
+    }
+
+    .trailer-banner-wrapper {
+        height: 340px;
+        width: 80%;
+        right: 10%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .banner .content {
+        justify-content: start;
+        gap: 4rem;
+    }
+
+    .card-image {
+        display: block;
+    }
+
+    .text-content {
+        width: 50%;
+    }
+
+    .text-content p {
+        font-size: 1.1rem;
+    }
+
+    footer .menu {
+        width: 700px;
+        justify-content: space-around;
+    }
+
+    .offcanvas {
+        display: none;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav .list-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        width: 250px;
+    }
+
+    nav .list-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        padding-bottom: .7rem;
+        position: relative;
+    }
+
+    nav .list-menu a::after {
+        content: "";
+        opacity: 0;
+        bottom: 0;
+        width: 0;
+        position: absolute;
+        left: 10%;
+        border: 1px solid var(--primary);
+        border-radius: .5px;
+        transition: all .5s ease;
+    }
+
+    nav .list-menu a:hover:after {
+        width: 80%;
+        opacity: 1;
+    }
+
+    .card-container-movie {
+        grid-template-columns: repeat(4, 160px);
+    }
+
+    .single-banner .wrapp {
+        grid-template-columns: 250px 1fr;
+        align-items: center;
+        grid-template-areas: 'card-image content';
+        gap: 2.5rem;
+    }
+
+    .single-card-image {
+        grid-area: card-image;
+        opacity: 1;
+    }
+
+    .single-content {
+        grid-area: content;
+    }
+
+    .single-banner .single-card-image {
+        position: relative;
+        z-index: 10;
+        height: 350px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .single-content .description {
+        font-size: 1.1rem;
+    }
+
+    .single-content .topcast-card {
+        grid-template-columns: repeat(auto-fill, 55px);
+        grid-template-rows: 70px;
+    }
+
+    .trailer {
+        width: 75%;
+    }
+
+    .single-banner .single-content .genre {
+        width: 400px;
+    }
+
+    .trailer-banner-wrapper {
+        height: 340px;
+        width: 70%;
+        right: 15%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    nav .content,
+    .banner .content,
+    .movie-section,
+    .trending-movie .card-container,
+    .top-rated-movie .card-container,
+    .trending-series .card-container,
+    .top-rated-series .card-container .single-banner .wrapp {
+        width: 85%;
+    }
+
+    nav {
+        padding: 1.3rem 0;
+    }
+
+    .text-content {
+        width: 40%;
+    }
+
+    .card-image {
+        scale: 1.1;
+        margin-left: 3rem;
+    }
+
+    footer {
+        margin-top: 8rem;
+        height: 350px;
+    }
+
+    footer .menu {
+        width: 800px;
+        justify-content: space-around;
+    }
+
+    footer h1 {
+        font-size: 2.4rem;
+    }
+
+    footer .menu li a {
+        font-size: 1.3rem;
+    }
+
+    .card-container-movie {
+        grid-template-columns: repeat(5, 170px);
+        grid-auto-rows: 300px;
+    }
+
+    .single-banner .wrapp {
+        gap: 3rem;
+        grid-template-columns: 250px .8fr;
+        justify-content: center;
+    }
+
+    .single-content .topcast-card {
+        grid-template-columns: repeat(auto-fill, 65px);
+        grid-template-rows: 85px;
+    }
+
+    .trailer {
+        width: 70%;
+    }
+
+    .trailer iframe {
+        height: 450px;
+    }
+
+    .trailer-banner-wrapper {
+        top: 20%;
+        width: 50%;
+        right: 25%;
+        height: 400px;
+    }
+}
+
+/* Media Query */
